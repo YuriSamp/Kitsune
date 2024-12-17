@@ -42,7 +42,7 @@ const posts = (await getCollection('blog')).sort(
 								<li class="flex gap-5">
 									<FormattedDate date={post.data.pubDate}/>
 									<a href={`/blog/${post.slug}/`} class="underline underline-offset-2 hover:text-neutral-600 decoration-secondary ">
-										<h4 class="font-semibold">{post.data.title}</h4>
+										<h4 class="font-semibold font-mono text-left">{post.data.title}</h4>
 									</a>
 								</li>
 							))
