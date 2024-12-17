@@ -15,8 +15,8 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-[#f9f5f2] h-screen flex justify-center py-12">
-		<main class="flex flex-col h-full justify-between">
+	<body class="bg-primary h-screen flex justify-center py-12">
+		<main class="flex flex-col h-full justify-between px-3">
 			<div class="flex flex-col gap-20">
 				<div class="flex flex-col gap-3">
 					<div>
@@ -26,7 +26,7 @@ const posts = (await getCollection('blog')).sort(
 					<div class="flex flex-col gap-1">
 						<div class="flex gap-2">
 							<span>Frontend</span>
-							<span>A11y</span>
+							<span>React</span>
 						</div>
 						<div class="flex gap-2">
 							<span>Databases</span>
@@ -41,8 +41,8 @@ const posts = (await getCollection('blog')).sort(
 							posts.map((post) => (
 								<li class="flex gap-5">
 									<FormattedDate date={post.data.pubDate}/>
-									<a href={`/blog/${post.slug}/`} class="underline underline-offset-2 hover:text-neutral-700">
-										<h4 class="title">{post.data.title}</h4>
+									<a href={`/blog/${post.slug}/`} class="underline underline-offset-2 hover:text-neutral-600 decoration-secondary ">
+										<h4 class="font-semibold">{post.data.title}</h4>
 									</a>
 								</li>
 							))
