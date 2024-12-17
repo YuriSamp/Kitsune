@@ -1,18 +1,57 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+);
 ---
 
 <!doctype html>
 <html lang="en">
-	<!-- <head>
+	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head> -->
-	<body class="bg-[#f9f5f2] min-h-full flex justify-center mt-12">
-		<main>
-			<h1>Yuri</h1>
-			<h2>Software engineer</h2>
-		</main>
-	</body>
+	</head>
+	<body class="bg-[#f9f5f2] h-screen flex justify-center py-12">
+		<main class="flex flex-col h-full justify-between">
+			<div class="flex flex-col gap-20">
+				<div class="flex flex-col gap-3">
+					<div>
+						<h1 class="text-4xl">Yuri</h1>
+						<h2 class="text-xl font-light">Software engineer</h2>
+					</div>
+					<div class="flex flex-col gap-1">
+						<div class="flex gap-2">
+							<span>Frontend</span>
+							<span>A11y</span>
+						</div>
+						<div class="flex gap-2">
+							<span>Databases</span>
+							<span>Devops</span>
+							<span>Computer Science</span>
+						</div>
+					</div>
+				</div>
+				<section>
+					<ul class="flex flex-col gap-2">
+						{
+							posts.map((post) => (
+								<li class="flex gap-5">
+									<FormattedDate date={post.data.pubDate}/>
+									<a href={`/blog/${post.slug}/`} class="underline underline-offset-2 hover:text-neutral-700">
+										<h4 class="title">{post.data.title}</h4>
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</section>
+			</div>
+			<Footer/>
+		</main>	
+	</body> 
 </html>
+ 
