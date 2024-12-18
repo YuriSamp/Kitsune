@@ -17,7 +17,7 @@ const readTime = remarkPluginFrontmatter.readingTime.text
 ---
 
 <BlogPost time={readTime} {...post.data} >
-	<div class="content flex flex-col gap-2">
+	<div class="content flex flex-col gap-2 text-xl font-light">
 		<Content />
 	</div>
 </BlogPost>
@@ -28,6 +28,5 @@ const readTime = remarkPluginFrontmatter.readingTime.text
   text-decoration-line: underline;
 	text-underline-offset: 2px;
 	text-decoration-color: #d41b1bf3;
-	font-weight: 700;
 }
 </style>
