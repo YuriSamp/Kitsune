@@ -16,5 +16,7 @@ const { Content } = await post.render();
 ---
 
 <BlogPost {...post.data}>
-	<Content />
+	<div class="flex flex-col gap-2">
+		<Content />
+	</div>
 </BlogPost>

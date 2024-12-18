@@ -1,16 +1,42 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '/blog-placeholder-3.jpg'
+title: '2024 Rewind'
+description: 'thoughts about 2024'
+pubDate: 'Dec 18 2024'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+This was a crazy year for me, and I need to inform you that my first
+draft of this post was in the last days of November because I couldn't
+wait to express my thoughts about my year in some words, so let's go.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+I don't even know where to start this, but a topic that was the main goal
+of my year was trying to be the best engineer that I could, and I really
+think that I failed so many times when I was writing code, interacting
+with people, and doing other things in my work that I cannot consider
+that I gave the best version of me during this year, but one thing that I
+can ensure is that I learned a LOT when I mean a lot is really a lot.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+In the first months of this year, I just knew the basics of a backend,
+things that you could learn in a YouTube tutorial, but when I started in
+my current company, I was in charge of creating a backend that handles
+thousands of requests per second when the same time I need to refactor
+the legacy frontend and backend, was thought in the early days ( the days
+that I learned most), but after 3-4 months I get the rhythm and could
+delivery a lot of things. Besides the value that I add to the company and
+the code, it brings me joy that one or two times per month I go back to a
+function / page / module and I can refactor it to improve code quality
+and throughput.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Outside my job, I learned go, lua, a little bit of elixir, a lot of
+things about distributed systems, and some frontend stuff. But one thing that sticks with me during some months was improving my typing speed, I used computers since I was 5 or 6 years old but I never thought about how I used my keyboard, I just typed in random ways to write the words I wanted to write, but a friend recommended me to improve this because this could make a difference in my day-a-day, I was skeptical in the first time, but this [amazing article](https://thorstenball.com/blog/2020/09/01/typing-can-be-the-bottleneck/) from Thorsten Ball gave me the last push I need to improve my typing, and oh my god, in the start of October I had 45 wpm on average and now I had approximately 85-90 wpm, this bumps gave me soo much joy and now I really have a pleasant experience writing articles.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+If I look back to the goals that I planned for this year, I didn't complete a lot of them, but I tried to do a lot of things that I didn't list, so I think that this is a clear sign that I need to improve how I list my goals!
+
+A couple of things that I did in this year that make me proud to share is:
+
+[golang compiler](https://github.com/YuriSamp/little-compiler) I really love everything from Thorsten Ball.
+
+[cli-to-create-a-preset-project](https://github.com/YuriSamp/haji) This one I didn't use a lot of time but I could help one friend so this is enough for me.
+
+[Yomu](https://github.com/YuriSamp/Yomu) A pet project trying to recreate the [tokei](https://github.com/XAMPPRocky/tokei) tool.
+
+[redis-cli-in-golang?](https://github.com/YuriSamp/cli-database) I haven't finished this one yet but I pretend to go back sometime because this has a lot of cool features that I can do and learn from them.
