@@ -3,9 +3,9 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & {time : string};
 
-const { title, description } = Astro.props;
+const { title, description, time } = Astro.props;
 ---
 
 <html lang="en">
@@ -15,16 +15,16 @@ const { title, description } = Astro.props;
 	<body class="bg-primary min-h-screen flex flex-col items-center justify-between px-3 py-12">
 		<main class="flex justify-center max-w-[600px]">
 			<article class="pb-12">
-					<div class="flex flex-col gap-4">
-						<a class="cursor-pointer font-semibold hover:text-neutral-600" href="/">
-							Go back
-						</a>
+				<div class="flex flex-col gap-4 pb-8">
+					<a class="cursor-pointer font-semibold hover:text-neutral-600" href="/">
+						Go back
+					</a>
+					<div class="flex gap-3 items-baseline">
 						<h1 class="text-4xl">{title}</h1>
-						<hr />
-					<div>
-						<slot />
+						<span class="font-light font-mono">{time}</span>
 					</div>
 				</div>
+				<slot />
 			</article>
 		</main>
 		<Footer />
