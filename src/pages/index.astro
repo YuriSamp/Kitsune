@@ -15,9 +15,9 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-primary h-screen flex justify-center py-12">
-		<main class="flex flex-col h-full justify-between px-3">
-			<div class="flex flex-col gap-20">
+	<body class="bg-primary min-h-screen flex flex-col items-center justify-between py-12 px-3">
+		<main class="flex flex-col pb-12">
+			<div class="flex flex-col gap-12 ">
 				<div class="flex flex-col gap-3">
 					<div>
 						<h1 class="text-4xl">Yuri</h1>
@@ -50,8 +50,8 @@ const posts = (await getCollection('blog')).sort(
 					</ul>
 				</section>
 			</div>
-			<Footer/>
 		</main>	
+		<Footer/>
 	</body> 
 </html>
  
