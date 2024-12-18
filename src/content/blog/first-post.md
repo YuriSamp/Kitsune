@@ -39,4 +39,4 @@ A couple of things that I did in this year that make me proud to share is:
 
 [Yomu](https://github.com/YuriSamp/Yomu) A pet project trying to recreate the [tokei](https://github.com/XAMPPRocky/tokei) tool.
 
-[redis-cli-in-golang?](https://github.com/YuriSamp/cli-database) I haven't finished this one yet but I pretend to go back sometime because this has a lot of cool features that I can do and learn from them.
+[redis-cli-in-golang](https://github.com/YuriSamp/cli-database) I haven't finished this one yet but I pretend to go back sometime because this has a lot of cool features that I can do and learn from them.
