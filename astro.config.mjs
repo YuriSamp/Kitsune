@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind';
 import {remarkReadingTime} from './plugin/remark-read-time';
 
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://yurisamp.dev/',
   integrations: [mdx(), sitemap(), tailwind()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
